@@ -1,0 +1,51 @@
+@import '@/app/styles/_mixins';
+.button {
+  @include flex-center;
+  box-sizing: border-box;
+  max-width: 248px;
+  max-height: 48px;
+  height: 100%;
+  padding: 15px 28px;
+  border: 1px solid rgba(18, 19, 19, 0.16);
+  border-radius: 41px;
+  background: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: -3%;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  position: relative;
+  svg {
+    transition: stroke 0.15s linear;
+    position: absolute;
+    right: 19px;
+    path {
+      stroke: black;
+    }
+  }
+  &:not(:disabled) {
+    &:hover {
+      background-color: rgb(0, 0, 0, 0.8);
+      color: white;
+      svg {
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+  &:disabled {
+    background: rgb(239, 239, 239);
+    color: rgb(172, 172, 172);
+    border: none;
+    cursor: default;
+    svg {
+      right: 20px;
+      path {
+        stroke: rgb(172, 172, 172);
+      }
+    }
+  }
+}
