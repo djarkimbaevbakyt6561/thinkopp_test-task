@@ -1,3 +1,5 @@
+@use './variables';
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
@@ -12,11 +14,11 @@
   box-sizing: border-box;
   padding: 0.9063rem 1.125rem;
   border-radius: 6px;
-  font-size: $font-size;
+  font-size: variables.$font-size;
   border: 1px solid rgba(0, 0, 0, 0.19);
   &::placeholder {
-    color: $text-color;
-    font-size: $font-size;
+    color: variables.$text-color;
+    font-size: variables.$font-size;
     opacity: 0.4;
   }
   &:focus {

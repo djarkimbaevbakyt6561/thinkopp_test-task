@@ -1,4 +1,4 @@
-@import '@/app/styles/_variables';
+@use '@/app/styles/_variables';
 
 .dropdown {
   position: relative;
@@ -19,7 +19,7 @@
       list-style: none;
       background: transparent;
       padding: 10px 20px;
-      font-size: $font-size;
+      font-size: variables.$font-size;
       cursor: pointer;
       &:hover {
         background-color: rgb(0, 0, 0, 0.8);

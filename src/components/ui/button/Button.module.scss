@@ -1,6 +1,7 @@
-@import '@/app/styles/_mixins';
+@use '@/app/styles/_mixins';
+
 .button {
-  @include flex-center;
+  @include mixins.flex-center;
   box-sizing: border-box;
   max-width: 248px;
   max-height: 48px;

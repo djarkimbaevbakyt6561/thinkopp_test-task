@@ -1,23 +1,23 @@
-@import '@/app/styles/_mixins'; 
-@import '@/app/styles/_variables';
+@use '@/app/styles/mixins';
+@use '@/app/styles/variables';
 
 .label {
-  @include flex-column;
+  @include mixins.flex-column;
   justify-content: flex-end;
   gap: 0.875rem;
-  font-size: $font-size;
+  font-size: variables.$font-size;
   color: rgb(29, 29, 29, 0.7);
   position: relative;
   &__input {
-    @include input-style;
+    @include mixins.input-style;
     &_error {
-      border: 1px solid $error-color !important;
+      border: 1px solid variables.$error-color !important;
     }
   }
   &__error_message {
     position: absolute;
     right: 1.125rem;
-    color: $error-color;
+    color: variables.$error-color;
     bottom: 1px;
   }
 }
