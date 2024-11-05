@@ -67,6 +67,12 @@
       align-items: center;
       margin-top: 4rem;
     }
+    @media (max-width: breakpoints.$sm) {
+      margin-top: 3rem;
+    }
+    @media (max-width: breakpoints.$xs) {
+      margin-top: 2rem;
+    }
   }
   &_first_input__container {
     @include input-container();
@@ -98,6 +104,12 @@
       flex-direction: column;
       position: static;
       gap: 1.875rem;
+    }
+    @media (max-width: breakpoints.$sm) {
+      margin-top: 3rem;
+    }
+    @media (max-width: breakpoints.$xs) {
+      margin-top: 2rem;
     }
   }
 }

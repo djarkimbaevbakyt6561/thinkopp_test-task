@@ -31,7 +31,7 @@
   svg {
     transition: stroke 0.15s linear;
     position: absolute;
-    right: 19px;
+    right: 20px;
     path {
       stroke: black;
     }
@@ -50,14 +50,11 @@
   }
   &:disabled {
     background: rgb(239, 239, 239);
+    border: 1px solid rgb(239, 239, 239);
     color: rgb(172, 172, 172);
-    border: none;
     cursor: default;
-    svg {
-      right: 20px;
-      path {
-        stroke: rgb(172, 172, 172);
-      }
+    svg path {
+      stroke: rgb(172, 172, 172);
     }
   }
 }
