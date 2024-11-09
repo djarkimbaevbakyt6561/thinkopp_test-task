@@ -11,7 +11,7 @@
 }
 
 .button {
-  @include mixins.flex-center;
+  @include mixins.flex($alignItems: center, $justifyContent: center);
   box-sizing: border-box;
   max-width: 248px;
   max-height: 48px;

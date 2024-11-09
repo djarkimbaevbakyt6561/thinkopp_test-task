@@ -2,22 +2,5 @@
 @use '@/app/styles/variables';
 
 .label {
-  @include mixins.flex-column;
-  justify-content: flex-end;
-  gap: 0.875rem;
-  font-size: variables.$font-size;
-  color: rgb(29, 29, 29, 0.7);
-  position: relative;
-  &__input {
-    @include mixins.input-style;
-    &_error {
-      border: 1px solid variables.$error-color !important;
-    }
-  }
-  &__error_message {
-    position: absolute;
-    right: 1.125rem;
-    color: variables.$error-color;
-    bottom: 1px;
-  }
+  @include mixins.input-style;
 }
